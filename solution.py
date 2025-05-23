@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import numpy as np
 
-file_path = 'data/data.csv'
-data = pd.read_csv(file_path, encoding="ISO-8859-1")
+data_path = 'data/data.csv'
+data = pd.read_csv(data_path, encoding="ISO-8859-1")
 
 data.fillna({"CustomerID": 'No CustomerID'}, inplace=True)
 
